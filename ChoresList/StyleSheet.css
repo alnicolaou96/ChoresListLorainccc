@@ -1,13 +1,14 @@
-﻿body{
-    margin:0px;
+﻿body {
+    margin: 0px;
+    background-color: rgb(4, 19, 32);
 }
 
-.container{
-    min-width:400px;
-    height:1000px;
-    display:grid;
-    grid-template-rows:repeat(15,1fr);
-    grid-template-columns:repeat(9,1fr);
+.container {
+    min-width: 400px;
+    height: 1000px;
+    display: grid;
+    grid-template-rows: repeat(15,1fr);
+    grid-template-columns: repeat(9,1fr);
 }
 
 .header{
@@ -21,4 +22,23 @@
     color:antiquewhite;
     text-shadow: 0px 0px 5px white;
     box-shadow: 0px 0px 5px rgb(23, 40, 56);
+}
+
+.shift{
+    grid-column:span 3;
+    background-color:antiquewhite;
+}
+
+.chores{
+    grid-column:span 3;
+}
+
+.footer{
+    width:100%;
+    grid-column:span 9;
+    background-color:antiquewhite;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    color:antiquewhite;
 }
