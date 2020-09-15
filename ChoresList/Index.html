@@ -15,32 +15,34 @@
         <div class="header">Field House</div>
 
         <!-- shift select -->
+
+        <!-- fitness center dropdown -->
         <div class="dropdown">
-            <div class="shift" id="FC-Dropdown">Choose Shift</div>
-            <div class="dropdown-content-fc">
-                <div class="FCFirst">6:30am-9:30am</div>
-                <div class="FCSecond">9:30am-12:30pm</div>
-                <div class="FCThird">12:30pm-3:30pm</div>
-                <div class="FCFourth">3:30pm-7:30pm</div>
+            <div onclick="fcDropdown()" class="shift" id="fcDropdownShift">Choose Shift</div> <!--button-->
+            <div id="fcDropdown"> <!--dropdown-->
+                <div id="fcFirst" onclick="fcFirstChores()">6:30am-9:30am</div>
+                <div id="fcSecond" onclick="fcSecondChores()">9:30am-12:30pm</div>
+                <div id="fcThird" onclick="fcThirdChores()">12:30pm-3:30pm</div>
+                <div id="fcFourth" onclick="fcFourthChores()">3:30pm-7:30pm</div>
             </div>
         </div>
-
+        <!-- equipment room aid dropdown -->
         <div class="dropdown">
-            <div class="shift" id="ERA-Dropdown">Choose Shift</div>
-            <div class="dropdown-content-era">
-                <div class="ERAFirst">8am-12pm</div>
-                <div class="ERASecond">12pm-3pm</div>
-                <div class="ERAThird">3pm-5pm</div>
+            <div onclick="eraDropdown()" class="shift" id="eraDropdownShift">Choose Shift</div> <!--button-->
+            <div id="eraDropdown"> <!--dropdown-->
+                <div id="eraFirst" onclick="eraFirstChores()">8am-12pm</div>
+                <div id="eraSecond" onclick="eraSecondChores()">12pm-3pm</div>
+                <div id="eraThird" onclick="eraThirdChores()">3pm-5pm</div>
             </div>
         </div>
-
+        <!-- fieldhouse dropdown -->
         <div class="dropdown">
-            <div onclick="fhDropdown()"class="shift">Choose Shift</div>
-            <div class="dropdown-content-fh" id="fhDropdown">
-                <div id="FHFirst" onclick="fhFirstChores()">6:30am-9:30am</div>
-                <div id="FHSecond" onclick="fhSecondChores()">9:30am-12:30pm</div>
-                <div id="FHThird" onclick="fhThirdChores()">12:30pm-3:30pm</div>
-                <div id="FHFourth" onclick="fhFourthChores()">3:30pm-7:30pm</div>
+            <div onclick="fhDropdown()" class="shift" id="fhDropdownShift">Choose Shift</div>  <!--button-->
+            <div id="fhDropdown">  <!--dropdown-->
+                <div id="fhFirst" onclick="fhFirstChores()">6:30am-9:30am</div>
+                <div id="fhSecond" onclick="fhSecondChores()">9:30am-12:30pm</div>
+                <div id="fhThird" onclick="fhThirdChores()">12:30pm-3:30pm</div>
+                <div id="fhFourth" onclick="fhFourthChores()">3:30pm-7:30pm</div>
             </div>
         </div>
 
