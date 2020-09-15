@@ -86,6 +86,24 @@ function fcFourthChores() {
 //equipment room aid chore display
 function eraDropdown() {
     document.getElementById("eraDropdown").style.display = "block";//opens dropdown
+
+    for (var i = 0; i < 5; i++) {
+        if ((i + 1) % 2 === 1) {//changes every other task text color for equipment room aid
+            document.getElementById("eraTask" + (i + 1)).style.color = "rgb(251, 255, 173)";
+        }
+    }
+
+    for (var j = 0; j < 3; j++) {
+        if ((j + 1) % 2 === 0) {//changes every other task text color for fitness center
+            document.getElementById("fcTask" + (j + 1)).style.color = "rgb(251, 255, 173)";
+        }
+    }
+
+    for (var k = 0; k < 3; k++) {
+        if ((k + 1) % 2 === 0) {//changes every other task text color for fieldhouse
+            document.getElementById("fhTask" + (k + 1)).style.color = "rgb(251, 255, 173)";
+        }
+    }
 }
 
 function eraFirstChores() {

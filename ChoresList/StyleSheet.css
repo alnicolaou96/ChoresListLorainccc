@@ -20,7 +20,7 @@
     font-family:Georgia, 'Times New Roman', Times, serif;
     background-color:rgb(0, 85, 165);
     color:antiquewhite;
-    text-shadow: 0px 0px 5px white;
+    text-shadow: 0px 2px 2px black;
     box-shadow: 0px 0px 5px rgb(23, 40, 56);
 }
 
@@ -36,15 +36,15 @@
 }
 
 /*shift*/
-.shift{
-    text-align:center;
-    padding:15px 15px 15px 15px;
-    font-size:20px;
-    background-color:antiquewhite;
-    text-shadow:0px 0px 1px rgb(0, 85, 165);
-    font-family:Arial;
-    cursor:pointer;
-    height:100%;
+.shift {
+    text-align: center;
+    padding: 15px 15px 15px 15px;
+    font-size: 20px;
+    background-color: antiquewhite;
+    text-shadow: 0px 0px 1px rgb(0, 85, 165);
+    font-family: Arial;
+    cursor: pointer;
+    height: 100%;
 }
 .shift:hover{
     color:rgb(0, 85, 165);
@@ -66,10 +66,17 @@
     text-align:center;
     font-size:18px;
 }
-.task{
-    padding:10px 10px 10px 10px;
-    max-width:100%;
-    word-wrap:break-word;
+.task {
+    padding: 10px 10px 10px 10px;
+    max-width: 100%;
+    word-wrap: break-word;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+.task:hover{
+    background-color:antiquewhite;
+    color:black;
+    box-shadow:0px 0px 10px 0px antiquewhite;
+    border-radius:5px;
 }
 
 /*fitness center dropdown CSS*/
@@ -77,47 +84,45 @@
     display: none;
     position: absolute;
     background-color: antiquewhite;
-    box-shadow: 0px 0px 30px 0px antiquewhite;
     width: 100%;
     cursor: pointer;
     text-align: center;
     border-radius: 0px 0px 5px 5px;
     padding: 3px 3px 3px 3px;
 }
-#fcDropdown div:hover {
+    #fcDropdown div:hover {
         background-color: rgb(143, 198, 199);
-
-}
+        box-shadow: 0px 0px 8px 0px rgb(143, 198, 199);
+    }
 
 /*equipment room aid dropdown CSS*/
 #eraDropdown {
     display: none;
     position: absolute;
     background-color: antiquewhite;
-    box-shadow: 0px 0px 30px 0px antiquewhite;
     width: 100%;
     cursor: pointer;
     text-align: center;
     border-radius: 0px 0px 5px 5px;
     padding: 3px 3px 3px 3px;
 }
-#eraDropdown div:hover {
+    #eraDropdown div:hover {
         background-color: rgb(143, 198, 199);
-
-}
+        box-shadow: 0px 0px 8px 0px rgb(143, 198, 199);
+    }
 
 /*field House dropdown CSS*/
 #fhDropdown {
     display: none;
     position: absolute;
     background-color: antiquewhite;
-    box-shadow: 0px 0px 30px 0px antiquewhite;
     width:100%;
     cursor:pointer;
     text-align:center;
     border-radius:0px 0px 5px 5px;
     padding:3px 3px 3px 3px;
 }
-#fhDropdown div:hover{
-    background-color: rgb(143, 198, 199);
-}
+    #fhDropdown div:hover {
+        background-color: rgb(143, 198, 199);
+        box-shadow: 0px 0px 8px 0px rgb(143, 198, 199);
+    }
