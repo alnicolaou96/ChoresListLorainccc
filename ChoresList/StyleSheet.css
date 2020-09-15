@@ -2,7 +2,6 @@
     margin: 0px;
     background-color: rgb(4, 19, 32);
 }
-
 .container {
     min-width: 400px;
     height: 1000px;
@@ -11,6 +10,7 @@
     grid-template-columns: repeat(9,1fr);
 }
 
+/*header*/
 .header{
     padding:10px;
     grid-column:span 3;
@@ -24,17 +24,7 @@
     box-shadow: 0px 0px 5px rgb(23, 40, 56);
 }
 
-.dropdown{
-    grid-column:span 3;
-    background-color:antiquewhite;
-    position:relative;
-    height:30px;
-}
-
-.chores{
-    grid-column:span 3;
-}
-
+/*footer*/
 .footer{
     width:100%;
     grid-column:span 9;
@@ -45,6 +35,7 @@
     color:antiquewhite;
 }
 
+/*shift*/
 .shift{
     text-align:center;
     padding:15px 15px 15px 15px;
@@ -55,9 +46,30 @@
     cursor:pointer;
     height:100%;
 }
-
 .shift:hover{
     color:rgb(0, 85, 165);
+}
+
+/*dropdown*/
+.dropdown{
+    grid-column:span 3;
+    background-color:antiquewhite;
+    position:relative;
+    height:30px;
+}
+
+/*chores*/
+.chores{
+    grid-column:span 3;
+    grid-row:span 10;
+    color:antiquewhite;
+    text-align:center;
+    font-size:18px;
+}
+.task{
+    padding:10px 10px 10px 10px;
+    max-width:100%;
+    word-wrap:break-word;
 }
 
 /*fitness center dropdown CSS*/
