@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>Chores</title>
     <link href="StyleSheet.css" rel="stylesheet" />
+    <script src="JavaScript.js"></script>
 </head>
 <body>
     <div class="container">
@@ -14,9 +15,35 @@
         <div class="header">Field House</div>
 
         <!-- shift select -->
-        <div class="shift"></div>
-        <div class="shift"></div>
-        <div class="shift"></div>
+        <div class="dropdown">
+            <div class="shift" id="FC-Dropdown">Choose Shift</div>
+            <div class="dropdown-content-fc">
+                <div class="FCFirst">6:30am-9:30am</div>
+                <div class="FCSecond">9:30am-12:30pm</div>
+                <div class="FCThird">12:30pm-3:30pm</div>
+                <div class="FCFourth">3:30pm-7:30pm</div>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <div class="shift" id="ERA-Dropdown">Choose Shift</div>
+            <div class="dropdown-content-era">
+                <div class="ERAFirst">8am-12pm</div>
+                <div class="ERASecond">12pm-3pm</div>
+                <div class="ERAThird">3pm-5pm</div>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <div onclick="fhDropdown()"class="shift">Choose Shift</div>
+            <div class="dropdown-content-fh" id="fhDropdown">
+                <div class="FHFirst">6:30am-9:30am</div>
+                <div class="FHSecond">9:30am-12:30pm</div>
+                <div class="FHThird">12:30pm-3:30pm</div>
+                <div class="FHFourth">3:30pm-7:30pm</div>
+            </div>
+        </div>
+
 
         <!-- chores -->
         <div class="chores"></div>
