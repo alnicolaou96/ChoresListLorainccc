@@ -140,3 +140,26 @@ function eraThirdChores() {
     document.getElementById("eraTask4").innerHTML = "third shift 4";
     document.getElementById("eraTask5").innerHTML = "third shift 5";
 }
+
+
+//time api
+var dayOfWeek;
+
+    fetch("https://world-time2.p.rapidapi.com/timezone/America/New_York", {
+        "method": "GET",
+        "headers": {
+            "x-rapidapi-host": "world-time2.p.rapidapi.com",
+            "x-rapidapi-key": "22f633b01amsh6be91bad6480fe2p14d4bdjsn2dd25817685a"
+        }
+    })
+        .then(response => {
+            console.log(response);
+            return response.json();
+        })
+        .then(function (data) {
+            dayOfWeek = data.day_of_week;
+        })
+        .catch(err => {
+            console.log(err);
+        });
+
