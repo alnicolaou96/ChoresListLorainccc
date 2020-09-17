@@ -312,32 +312,71 @@ function chores(dayOfWeek, eraCurrentShift, fcCurrentShift, fhCurrentShift) {
         case 5:
             switch (eraCurrentShift) {
                 case 1:
+                    eraTask1.innerHTML = "Check facility access list for gymnasium and tear down/set up as appropriate";
+                    eraTask2.innerHTML = "Check facility access list for field house and tear down/set up as appropriate";
+                    eraTask3.innerHTML = "Start laundry if needed";
+                    eraTask4.innerHTML = "Clean stretching mats";
+                    eraTask5.innerHTML = "Dry mop the gym and PE105-vacuum dry mop";
                     break;
                 case 2:
+                    eraTask1.innerHTML = "Check facility access list for gymnasium and tear down/set up as appropriate";
+                    eraTask2.innerHTML = "Check facility access list for field house and tear down/set up as appropriate";
+                    eraTask3.innerHTML = "Check Kristy's bench for garbage, branches, and straighten flag and butterfly";
+                    eraTask4.innerHTML = "Check and Update first aid kits";
+                    eraTask5.innerHTML = "Wipe down cable cross, assisted pull up, and glue/hip machines- frames,pads, and pins";
                     break;
                 case 3:
+                    eraTask1.innerHTML = "Check facility access list for gymnasium and tear down/set up as appropriate";
+                    eraTask2.innerHTML = "Check facility access list for field house and tear down/set up as appropriate";
+                    eraTask3.innerHTML = "Continue laundry";
+                    eraTask4.innerHTML = "Check public restrooms";
+                    eraTask5.innerHTML = "Replace Towels and spray bottles";
                     break;
             }
 
             switch (fcCurrentShift) {
                 case 1:
+                    fcTask1.innerHTML = "Check Track for debris and water- empty trash cans";
+                    fcTask2.innerHTML = "Check stock and replace paper towels and spraybottles on the track ";
+                    fcTask3.innerHTML = "";
                     break;
                 case 2:
+                    fcTask1.innerHTML = "Wipe down benches and bars in free weight area";
+                    fcTask2.innerHTML = "";
+                    fcTask3.innerHTML = "";
                     break;
                 case 3:
+                    fcTask1.innerHTML = "replace towels in the fitness center and empty dirty towel bins";
+                    fcTask2.innerHTML = "";
+                    fcTask3.innerHTML = "";
                     break;
                 case 4:
+                    fcTask1.innerHTML = "Empty towel bins in PE105 and faculty locker rooms";
+                    fcTask2.innerHTML = "Wipe out cubbies in fitness center";
+                    fcTask3.innerHTML = "";
                     break;
             }
 
             switch (fhCurrentShift) {
                 case 1:
+                    fhTask1.innerHTML = "Check hallway between 102 and 10r for debris";
+                    fhTask2.innerHTML = "30 towels in 105";
+                    fhTask3.innerHTML = "10 towels in facult locker rooms and 10 little brown towels in women's";
                     break;
                 case 2:
+                    fhTask1.innerHTML = "Wipe down expresso bikes- handles, frames, and pads";
+                    fhTask2.innerHTML = "";
+                    fhTask3.innerHTML = "";
                     break;
                 case 3:
+                    fhTask1.innerHTML = "Continue laundry";
+                    fhTask2.innerHTML = "Wipe down hoist circuit- handles, frames, pins, and pads";
+                    fhTask3.innerHTML = "";
                     break;
                 case 4:
+                    fhTask1.innerHTML = "Sweep/vacuum around lifetime fitness machines and lemond bikes";
+                    fhTask2.innerHTML = "Take lost and found to security";
+                    fhTask3.innerHTML = "";
                     break;
             }
             break;
