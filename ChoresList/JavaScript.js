@@ -99,32 +99,71 @@ function chores(dayOfWeek, eraCurrentShift, fcCurrentShift, fhCurrentShift) {
         case 2:
             switch (eraCurrentShift) {
                 case 1:
+                    eraTask1.innerHTML = "Check facility access list for gymnasium and tear down/set up as appropriate";
+                    eraTask2.innerHTML = "Check facility access list for field house and tear down/set up as appropriate";
+                    eraTask3.innerHTML = "Sweep gym and PE105 with larg dust mop. Shop vac after";
+                    eraTask4.innerHTML = "Laundry if needed";
+                    eraTask5.innerHTML = "Check kristys bench and surrounding areas for trash, tree branches, and straighten butterfly/flag";
                     break;
                 case 2:
+                    eraTask1.innerHTML = "Check facility access list for gymnasium and tear down/set up as appropriate";
+                    eraTask2.innerHTML = "Check facility access list for field house and tear down/set up as appropriate";
+                    eraTask3.innerHTML = "Replace towels in fitness center/empty dirty towel bins";
+                    eraTask4.innerHTML = "Clean all surfaces in PE102 and 103 after Doug and MJs class ends at 1pm";
+                    eraTask5.innerHTML = "Check field house floor for debris and clean up if necessary";
                     break;
                 case 3:
+                    eraTask1.innerHTML = "Check facility access list for gymnasium and tear down/set up as appropriate";
+                    eraTask2.innerHTML = "Check facility access list for field house and tear down/set up as appropriate";
+                    eraTask3.innerHTML = "Replace towels and spray bottles in the fitness center if needed";
+                    eraTask4.innerHTML = "Check public restrooms- replace soap and take out garbage if needed";
+                    eraTask5.innerHTML = "Empty towel bin in PE105 and faculty locker rooms if needed";
                     break;
             }
 
             switch (fcCurrentShift) {
                 case 1:
+                    fcTask1.innerHTML = "Check hallway between 102 and 103 for debris";
+                    fcTask2.innerHTML = "30 towels in 105";
+                    fcTask3.innerHTML = "10 towels in each faculty locker room and 10 small brown towels in the women's";
                     break;
                 case 2:
+                    fcTask1.innerHTML = "Wipe down and clean free weight area";
+                    fcTask2.style.backgroundColor = "rgb(4, 19, 32)";
+                    fcTask3.style.backgroundColor = "rgb(4, 19, 32)";
                     break;
                 case 3:
+                    fcTask1.innerHTML = "Tidy welcome desk area- get rid of all clutter and move excessive belongings to the mail room";
+                    fcTask2.innerHTML = "Wipe down and clean steppers/expresso bikes";
+                    fcTask3.style.backgroundColor = "rgb(4, 19, 32)";
                     break;
                 case 4:
+                    fcTask1.innerHTML = "Wipe down inside and outside handrails on the track";
+                    fcTask2.style.backgroundColor = "rgb(4, 19, 32)";
+                    fcTask3.style.backgroundColor = "rgb(4, 19, 32)";
                     break;
             }
 
             switch (fhCurrentShift) {
                 case 1:
+                    fhTask1.innerHTML = "Check track for water- empty garbage";
+                    fhTask2.innerHTML = "Check, stock, and replace paper towels and spray bottles on the track";
+                    fhTask3.innerHTML = "Wipe down hoist circuit- frames, handles, pins, and seats";
                     break;
                 case 2:
+                    fhTask1.innerHTML = "Wipe down all 3 stretching mats";
+                    fhTask3.style.backgroundColor = "rgb(4, 19, 32)";
+                    fhTask3.style.backgroundColor = "rgb(4, 19, 32)";
                     break;
                 case 3:
+                    fhTask1.innerHTML = "Wipe down equipment under the stairs";
+                    fhTask2.innerHTML = "Continue laundry";
+                    fhTask3.style.backgroundColor = "rgb(4, 19, 32)";
                     break;
                 case 4:
+                    fhTask1.innerHTML = "Wipe down all 3 stretching mats";
+                    fhTask2.style.backgroundColor = "rgb(4, 19, 32)";
+                    fhTask3.style.backgroundColor = "rgb(4, 19, 32)";
                     break;
             }
             break;
