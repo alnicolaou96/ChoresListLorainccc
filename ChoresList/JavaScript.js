@@ -163,3 +163,32 @@ var dayOfWeek;
             console.log(err);
         });
 
+window.onload = function () {// executes code when window loads
+    setTimeout(function () {// executes code with a given delay
+        console.log(dayOfWeek);//current day of week from api
+        var day = document.getElementById("footer");
+        switch (dayOfWeek) {//changes the footer inner html based on day
+            case 0:
+                day.innerHTML = "Sunday";
+                break;
+            case 1:
+                day.innerHTML = "Monday";
+                break;
+            case 2:
+                day.innerHTML = "Tuesday";
+                break;
+            case 3:
+                day.innerHTML = "Wednesday";
+                break;
+            case 4:
+                day.innerHTML = "Thursday";
+                break;
+            case 5:
+                day.innerHTML = "Friday";
+                break;
+            case 6:
+                day.innerHTML = "Saturday";
+                break;
+        }
+    }, 5000);
+}
