@@ -1,10 +1,235 @@
-﻿
+﻿var eraCurrentShift;
+var fcCurrentShift;
+var fhCurrentShift;//current shift selected
+
+var dayOfWeek;//variable to store day of week from api
+
+
+
+//will change task text based on current day and selected shift
+function chores(dayOfWeek, eraCurrentShift, fcCurrentShift, fhCurrentShift) {
+    var fcTask1 = document.getElementById("fcTask1");
+    var fcTask2 = document.getElementById("fcTask2");
+    var fcTask3 = document.getElementById("fcTask3");
+
+    var fhTask1 = document.getElementById("fcTask1");
+    var fhTask2 = document.getElementById("fcTask2");
+    var fhTask3 = document.getElementById("fcTask3");
+
+    var eraTask1 = document.getElementById("eraTask1");
+    var eraTask2 = document.getElementById("eraTask2");
+    var eraTask3 = document.getElementById("eraTask3");
+    var eraTask4 = document.getElementById("eraTask4");
+    var eraTask5 = document.getElementById("eraTask5");
+
+
+
+    switch (dayOfWeek) {
+        case 1:
+            switch (eraCurrentShift) {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+            }
+
+            switch (fcCurrentShift) {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+            }
+
+            switch (fhCurrentShift) {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+            }
+            break;
+        case 2:
+            switch (eraCurrentShift) {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+            }
+
+            switch (fcCurrentShift) {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+            }
+
+            switch (fhCurrentShift) {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+            }
+            break;
+        case 3:
+            switch (eraCurrentShift) {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+            }
+
+            switch (fcCurrentShift) {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+            }
+
+            switch (fhCurrentShift) {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+            }
+            break;
+        case 4:
+            switch (eraCurrentShift) {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+            }
+
+            switch (fcCurrentShift) {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+            }
+
+            switch (fhCurrentShift) {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+            }
+            break;
+        case 5:
+            switch (eraCurrentShift) {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+            }
+
+            switch (fcCurrentShift) {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+            }
+
+            switch (fhCurrentShift) {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+            }
+            break;
+        case 6:
+            switch (eraCurrentShift) {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+            }
+
+            switch (fcCurrentShift) {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+            }
+
+            switch (fhCurrentShift) {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+            }
+            break;
+
+}
+    
+}
+
 //field house chores display
 function fhDropdown() {
     document.getElementById("fhDropdown").style.display = "block";//opens dropdown
 }
 
 function fhFirstChores() {//first shift chores
+    fhCurrentShift = 1;
+
     document.getElementById("fhDropdown").style.display = "none";//closes dropdown
     document.getElementById("fhDropdownShift").innerHTML = "6:30am-9:30am";//changes dropdown button to time slot
 
@@ -14,6 +239,8 @@ function fhFirstChores() {//first shift chores
     document.getElementById("fhTask3").innerHTML = "first shift 3";
 }
 function fhSecondChores() {//second shift chores
+    fhCurrentShift = 2;
+
     document.getElementById("fhDropdown").style.display = "none";//closes dropdown
     document.getElementById("fhDropdownShift").innerHTML = "9:30am-12:30pm";//changes dropdown button to time slot
 
@@ -23,6 +250,8 @@ function fhSecondChores() {//second shift chores
     document.getElementById("fhTask3").innerHTML = "second shift 3";
 }
 function fhThirdChores() {//third shift chores
+    fhCurrentShift = 3;
+
     document.getElementById("fhDropdown").style.display = "none";//closes dropdown
     document.getElementById("fhDropdownShift").innerHTML = "12:30pm-3:30pm";//changes dropdown button to time slot
 
@@ -32,6 +261,8 @@ function fhThirdChores() {//third shift chores
     document.getElementById("fhTask3").innerHTML = "third shift 3";
 }
 function fhFourthChores() {//fourth shift chores
+    fhCurrentShift=4
+
     document.getElementById("fhDropdown").style.display = "none";//closes dropdown
     document.getElementById("fhDropdownShift").innerHTML = "3:30am-7:30pm";//changes dropdown button to time slot
 
@@ -47,6 +278,8 @@ function fcDropdown() {
 }
 
 function fcFirstChores() {
+    fcCurrentShift = 1;
+
     document.getElementById("fcDropdown").style.display = "none";//closes dropdown
     document.getElementById("fcDropdownShift").innerHTML = "6:30am-9:30am";//changes dropdown button to time slot
 
@@ -56,6 +289,8 @@ function fcFirstChores() {
     document.getElementById("fcTask3").innerHTML = "first shift 3";
 }
 function fcSecondChores() {
+    fcCurrentShift = 2;
+
     document.getElementById("fcDropdown").style.display = "none";//closes dropdown
     document.getElementById("fcDropdownShift").innerHTML = "9:30am-12:30pm";//changes dropdown button to time slot
 
@@ -65,6 +300,8 @@ function fcSecondChores() {
     document.getElementById("fcTask3").innerHTML = "second shift 3";
 }
 function fcThirdChores() {
+    fcCurrentShift = 3;
+
     document.getElementById("fcDropdown").style.display = "none";//closes dropdown
     document.getElementById("fcDropdownShift").innerHTML = "12:30pm-3:30pm";//changes dropdown button to time slot
 
@@ -74,6 +311,8 @@ function fcThirdChores() {
     document.getElementById("fcTask3").innerHTML = "third shift 3";
 }
 function fcFourthChores() {
+    fcCurrentShift = 4;
+
     document.getElementById("fcDropdown").style.display = "none";//closes dropdown
     document.getElementById("fcDropdownShift").innerHTML = "3:30pm-7:30pm";//changes dropdown button to time slot
 
@@ -107,6 +346,8 @@ function eraDropdown() {
 }
 
 function eraFirstChores() {
+    eraCurrentShift = 1;
+
     document.getElementById("eraDropdown").style.display = "none";//closes dropdown
     document.getElementById("eraDropdownShift").innerHTML = "8am-12pm";//changes dropdown button to time slot
 
@@ -118,6 +359,8 @@ function eraFirstChores() {
     document.getElementById("eraTask5").innerHTML = "first shift 5";
 }
 function eraSecondChores() {
+    eraCurrentShift = 2;
+
     document.getElementById("eraDropdown").style.display = "none";//closes dropdown
     document.getElementById("eraDropdownShift").innerHTML = "12pm-3pm";//changes dropdown button to time slot
 
@@ -130,6 +373,8 @@ function eraSecondChores() {
 
 }
 function eraThirdChores() {
+    eraCurrentShift = 3;
+
     document.getElementById("eraDropdown").style.display = "none";//closes dropdown
     document.getElementById("eraDropdownShift").innerHTML = "3pm-5pm";//changes dropdown button to time slot
 
@@ -142,9 +387,8 @@ function eraThirdChores() {
 }
 
 
-//time api
-var dayOfWeek;
 
+//time api
     fetch("https://world-time2.p.rapidapi.com/timezone/America/New_York", {
         "method": "GET",
         "headers": {
@@ -165,8 +409,10 @@ var dayOfWeek;
 
 window.onload = function () {// executes code when window loads
     setTimeout(function () {// executes code with a given delay
-        console.log(dayOfWeek);//current day of week from api
+
+
         var day = document.getElementById("footer");
+
         switch (dayOfWeek) {//changes the footer inner html based on day
             case 0:
                 day.innerHTML = "Sunday";
@@ -190,5 +436,5 @@ window.onload = function () {// executes code when window loads
                 day.innerHTML = "Saturday";
                 break;
         }
-    }, 5000);
+    }, 1000);//amount of milliseconds function is delayed
 }
