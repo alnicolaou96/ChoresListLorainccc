@@ -5,7 +5,6 @@ var fhCurrentShift;//current shift selected
 var dayOfWeek;//variable to store day of week from api
 
 
-
 //will change task text based on current day and selected shift
 function chores(dayOfWeek, eraCurrentShift, fcCurrentShift, fhCurrentShift) {
     var fcTask1 = document.getElementById("fcTask1");
@@ -610,6 +609,38 @@ window.onload = function () {// executes code when window loads
                 break;
             case 6:
                 day.innerHTML = "Saturday";
+
+                //changing saturday shift to only display one shift for one position
+                document.getElementById("eraFirst").innerHTML = "";
+                document.getElementById("eraSecond").innerHTML = "";
+                document.getElementById("eraThird").innerHTML = "";
+
+                document.getElementById("fhFirst").innerHTML = "";
+                document.getElementById("fhSecond").innerHTML = "";
+                document.getElementById("fhThird").innerHTML = "";
+                document.getElementById("fhFourth").innerHTML = "";
+
+                document.getElementById("fcFirst").innerHTML = "";
+                document.getElementById("fcSecond").innerHTML = "";
+                document.getElementById("fcThird").innerHTML = "";
+                document.getElementById("fcFourth").innerHTML = "";
+
+
+                document.getElementById("fcHeader").innerHTML = "";
+                document.getElementById("fhHeader").innerHTML = "";
+                document.getElementById("eraHeader").innerHTML = "Saturday";
+
+                document.getElementById("fcDropdownShift").innerHTML = "";
+                document.getElementById("fhDropdownShift").innerHTML = "";
+                document.getElementById("eraDropdownShift").innerHTML = "8am-2pm";
+
+                altTextColors();
+
+                document.getElementById("eraTask1").innerHTML = "Check facility access list for gym and field house- empty garbage if needed";
+                document.getElementById("eraTask2").innerHTML = "check hallway between 102 and 103 for debris also check gym and field house";
+                document.getElementById("eraTask3").innerHTML = "Tidy welcome desk- throw away garbage and move excessive clutter to the mail room";
+                document.getElementById("eraTask4").innerHTML = "Check public restrooms- Replace soap and paper towels if needed and take out garbage";
+                document.getElementById("eraTask5").innerHTML = "replace towels and spray bottles and do laundry";
                 break;
         }
     }, 1000);//amount of milliseconds function is delayed
