@@ -25,14 +25,16 @@
 }
 
 /*footer*/
-.footer{
-    width:100%;
-    grid-column:span 9;
-    background-color:antiquewhite;
-    position:fixed;
+.footer {
+    width: 100%;
+    grid-column: span 9;
+    background-color: antiquewhite;
+    position: fixed;
     bottom: 0;
     left: 0;
-    color:black;
+    color: black;
+    padding: 0px 15px 0px 15px;
+    font-family: Impact, fantasy
 }
 
 /*shift*/
@@ -67,15 +69,15 @@
     font-size:18px;
 }
 .task {
-    padding: 15px 10px 15px 10px;
+    padding: 25px 10px 25px 10px;
     max-width: 100%;
     word-wrap: break-word;
+    height:40px;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 .task:hover{
-    background-color:antiquewhite;
-    color:black;
-    box-shadow:0px 0px 10px 0px antiquewhite;
+    background-color:rgb(3, 15, 25);
+    color:antiquewhite;
     border-radius:5px;
 }
 
